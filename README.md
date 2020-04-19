@@ -1,3 +1,10 @@
+# DATA BINDING TYPES
+
+* One Way data binding
+* Two Way data binding
+* Event data binding
+
+
 ## Interpolation or one way Data Binding:
 
 name: String= 'Brighty'; in component
