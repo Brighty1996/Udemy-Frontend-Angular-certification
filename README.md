@@ -31,6 +31,8 @@ Trigger the event click and print the data.
     console.log(this.username);
   }
 ```
+# ROUTES
+
   ## Routing Components:
 
   In [app-routing.module.ts],
