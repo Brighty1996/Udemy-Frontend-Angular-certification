@@ -1,18 +1,23 @@
 ## Interpolation or one way Data Binding:
 
 name: String= 'Brighty'; in component
+
 {{name}} in html
 
 ## 2 Way Data Binding:
 
-[(ngModule)] this is the babana approach 
+[(ngModule)] this is the banana approach 
+
 Username: <input type='text' name='username' [(ngModel)]="username">
+
 We should import FormsModule in app.module.ts
 
 ## Event Data Binding:
 
 Trigger the event click and print the data.
+
 <button (click)="handleLogin()">Login</button> in html.
+
   In Component,
   
   handleLogin(){
@@ -22,6 +27,7 @@ Trigger the event click and print the data.
   ## Routing Components:
 
   In app-routing.module.ts,
+
   We can see const routes: Routes = [];
 
   const routes: Routes = [{path:'login', component:LoginComponent},
@@ -30,9 +36,11 @@ Trigger the event click and print the data.
 And check app.component.html have <router-outlet></router-outlet>
 
 for default/ initial page,path should be empty.
+
  const routes: Routes = [{path:'', component:LoginComponent}]
 
 for other path which is not mentioned in routes.
+
  const routes: Routes = [{path:'**', component:ErrorComponent}] 
 
 ## Router from one component to another component:
